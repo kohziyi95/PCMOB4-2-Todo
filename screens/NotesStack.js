@@ -10,10 +10,11 @@ export default function NotesStack() {
         name="Notes"
         component={NotesScreen}
         options={{
-          title: "Notes, a Todo App",
+          title: "To-Do-List",
+          
           headerStyle: {
             backgroundColor: "yellow",
-            height: 100,
+            height: 120,
             shadowColor: "black",
             shadowOpacity: 0.2,
             shadowRadius: 5,

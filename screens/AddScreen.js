@@ -11,8 +11,8 @@ export default function AddScreen({ navigation }) {
   const [text, setText] = useState("");
 
   return (
-    <View style={[styles.container, { backgroundColor: "white" }]}>
-      <Text style={{ fontSize: 24 }}>What do you want to add?</Text>
+    <View style={styles.container}>
+      <Text style={{ fontSize: 30, marginBottom: 30 }}>Add a new note!</Text>
       <TextInput
         style={styles.textInput}
         value={text}
@@ -49,7 +49,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     width: "80%",
     padding: 10,
-    marginTop: 20,
+    margin: 20,
+    fontSize: 20,
+    backgroundColor: "#fff"
   },
   button: {
     padding: 10,
@@ -57,10 +59,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     margin: 10,
     marginTop: 30,
-    width: 80,
+    paddingHorizontal: 20,
+    padding: 10,
   },
   buttonText: {
     textAlign: "center",
+    fontSize: 20,
   },
   buttonContainer: {
     flexDirection: "row",

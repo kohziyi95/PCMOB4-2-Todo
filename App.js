@@ -9,8 +9,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Notes Stack" component={NotesStack} />
-        <Stack.Screen name="Add Screen" component={AddScreen} />
+        <Stack.Screen name="Notes Stack" component={NotesStack} options={{ headerShown: false }} />
+        <Stack.Screen name="Add Screen" component={AddScreen} options={{ headerShown: false }}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
